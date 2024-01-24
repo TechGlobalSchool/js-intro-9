@@ -1,0 +1,174 @@
+
+
+JavaScript is a programming language.
+
+Computer: 
+
+	-machine
+	-simple and complex computing
+	-runs programs
+	-stores data (information)
+
+hardwares + softwares 
+keyboard 	OS - Windows and MacOS, IOS, Android
+mouse 		Microsoft Suite
+screen 		Sublime
+hard-disk   Google, Safari
+CPU 		Amazon, Costco, Etsy, Instagram
+
+CPU: Central Processing Unit (Brain of the computer)
+Hardware: all the visible pieces of the computer
+Software: application that runs on the computer and written with programming languages
+
+
+input -> ones and zeros - output 
+input -> process -> output
+
+
+
+
+
+Counting system
+Decimal - base-10 system
+
+0 1 2 3 4 5 6 7 8 9
+
+1
+9
+10
+11
+12
+13
+
+
+Binary system - base-2 -> ones and zeros
+0 1
+
+Human 			Binary 
+0 				00000000
+1 				00000001
+2 				00000010
+3 				00000011
+4 				00000100
+5 				00000101
+6 				00000110
+65 				01000001
+35 				00100011
+
+
+10101011 		-> 128 + 32 + 8 + 2 + 1 -> 171
+
+0 - OFF
+1 - ON
+
+Bit - one or zero
+byte - 8 bits
+
+
+A
+Hello world!
+
+
+CAT -> 
+C 67 		01000011
+A 65 		01000001
+T 84 		01010100
+
+01000011-01000001-01010100
+
+C T  -> 01000011-00100000-01010100
+CT 	 -> 01000011-01010100
+
+
+
+'Hello' === 'Hello '
+'Hello' === 'hello'
+
+
+Natural languages 
+We were having orientation!
+
+
+Programming language
+50-100 keywords
+var, let, const, class, static, final
+
+Syntax: grammar rules of the programming languages
+
+console.log("TechGlobal");
+
+
+ES6 or ES2015 -> Release happened with JS in 2015 
+EcmaScript = JavaScript
+
+JS is an interpreted languague: infer-predict
+There are also compiled languages: Java, C#, C++
+
+
+
+1. Get the language runtime environment - Node.js
+2. The best IDE to write and execute the code
+	Visual Studio Code, IntelliJ IDEA, Eclipse IDE, Sublime, Atom
+
+IDE: Integrated Development Environment
+
+EXECUTE: run 
+COMPILE: syntax error
+
+
+
+
+Syntax Rules: You MUST follow 
+Conventions: Not MUST but followed by almost all the programmer. Good to follow
+
+
+
+Statement: each line of code
+Convention: Each statement is followed by semi-colon (;)
+
+
+Multi-line typing-editing
+Mac: press option and select all the lines/edit/ESC 
+Windows: press alt and select all the lines/edit/ESC 
+
+Command = CTRL 
+Option = Alt 
+
+
+How to duplicate a statement to next or previous line 
+Mac: Option + Shift + up or down arrow
+Windows: Alt + Shift + up or down arrow
+
+;   -> semi-colon 
+:   -> colon
+.   -> dot, period 
+,   -> coma 
+()  -> parantheses 
+[]  -> square brackets 
+{}  -> curly braces 
+/   -> forward slash 
+\   -> backward slash 
+|   -> pipe or OR 
+||  -> OR 
+&   -> AND 
+&&  -> AND 
+=   
++
+-   -> dash, minus, hyphen
+*   -> asterisk, star
+/  
+%   -> modulus or remainder
+>
+<
+>=
+<=
+++
+--
+
+_   -> under score 
+%   -> percentage
+^   -> carat
+$   -> dollar sign 
+!   -> exclamation, NOT 
+@   -> 
+#   -> 
