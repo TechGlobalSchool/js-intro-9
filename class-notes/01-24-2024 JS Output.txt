@@ -1,0 +1,116 @@
+
+
+
+RECAP:
+
+Computer:
+
+input -> process -> output
+
+
+Computer language: binary code (ones zeros)
+ASCII: 
+
+A -> 65 -> 01000001
+
+
+
+
+Natural language vs programming language 
+Natural languages: Grammar rules 
+Programming languages: Syntax rules 
+Programming languages does not like ambiguity - conflict
+
+Conventions: unwritten rules but good to follow
+
+
+Compiled: This is more strict 
+Interpreted: Little bit more flexible compared to compiled languages
+
+
+Compiler: compilation: syntax issues and errors you can observe even before execution of the code
+Executor: execution: running the code 
+
+Runtime error: These are the errors you will see only when you execute the code
+
+Statement: a line of code
+
+
+Comments:
+// single line
+
+/*
+Multi-line
+*/
+
+ES6 Feature (ES2015)
+Backticks - String Templates - String Literals
+
+
+Convention: We always put one statement per line
+
+    Tesla, Inc. (/ˈtɛslə/ TESS-lə or /ˈtɛzlə/ TEZ-lə[a]) is an American multinational automotive and clean 
+energy company headquartered in Austin, Texas, which designs, manufactures and sells electric vehicles, 
+stationary battery energy storage devices from home to grid-scale, solar panels and solar shingles, and related 
+products and services.
+
+
+
+Variables: special containers that stores data in any programming language 
+30-40 
+let-var-const: they are used to create variables that stores a piece of data such as text, number or collection
+
+
+Data Types 
+string: text data type 
+    name, address, phone number, ssn
+
+strings are stored in quotes (single or double) 
+
+let name = 'John';
+let city = "Chicago";
+
+
+number: whole (absolute) number and floating numbers (decimal points)
+    1, 5, 3000, 55
+    10.99, 3.5
+
+let price = 10.99;
+let age = 27;
+
+
+
+NAMING VARIABLES 
+Syntax:
+-You cannot have space.
+-You cannot start with digits but use digits anywhere else.
+-You cannot use any special characters but _, $ and all the other currency signs and you 
+    can use these even as the first character
+-You cannot use any reserved keyword. 
+var let const class static name 
+
+-You cannot use a variable name twice
+
+Convention:
+    -We start with lowercase 
+    -We follow camel-case rule -> bankAccountNumber
+    -We should always give meaningful names to our variables 
+
+
+let country = 'USA';
+let city = 'Chicago';
+
+
+x, y, z, a, b, c
+
+let age;                    // yes
+let AGE;                    // yes but not recommended
+let shift$;                 // yes
+let number of students;     // no 
+let _firstLetter;           // yes
+let 8students;              // no
+let isWheatherSnowing#;     // no
+let @balance;               // no 
+
+
+
