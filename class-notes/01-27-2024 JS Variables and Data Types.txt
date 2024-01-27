@@ -1,0 +1,122 @@
+
+
+
+RECAP:
+
+
+Variables: These are special container that stores some data 
+strings: any text data is string. name, quote, sentence, paragraph, address 
+number: price, age, count 
+
+
+var-let-const
+
+var name = 'John';
+var age = 25;
+
+
+let and const came with ES6 (ES2015)
+EcmaScript: standart of JavaScript
+
+
+let address = 'Chicago';
+address = 'Miami'; // allowed
+
+NOTE: let is mutable (you can change/update it)
+
+const pi = 3.14;
+pi = 5; // not allowed, TypeError
+
+
+Declaration
+let address;
+const pi; // compiler error
+
+Assignment
+address = 'Chicago';
+
+Re-assignment 
+address = 'Miami';
+
+
+Initialization = declaration + assignment 
+let address = 'Chicago';
+
+
+
+VARIABLE NAMING RULES 
+Syntax:
+    -the first character of the variable cannot be a digit but digits can be used anywhere else
+    -the space is not allowed in the variable name 
+    -the specials characters except _, $ and other currencies are not allowed in the variable name 
+        _, $, and other currencies can even be used as the first characters
+    -reversed keywords cannot be used as your variable names 
+        var, let, const, class, static, byte, boolean, true, false
+    -do not use a variable name twice / compiler error 
+
+    let companyName = 'Apple';
+
+    let companyName = 'Microsoft'; // Syntax Error
+
+
+Conventions: 
+    -camelCase rule for naming variables that has multiple words
+    -we always (98%) start with lowercase for our variable names  
+    -we always give meaningful names to our variables 
+
+
+Mac: option+shift+down arrow
+Windows: alt+shift+down arrow
+
+
+const name, age;            // false
+let n1 = 45, n2;            // true 
+const num1 = 45, num2;      // false 
+let x, let y;               // false
+let a; let b;               // true but not recommended
+let i1; i2;                 // syntax is okay but will get a Runtime Error 
+
+
+
+DATA TYPES
+Primitive: smallest and simpliest type of data 
+-string 
+-number 
+-bigint
+-boolean 
+-undefined
+-null 
+-symbol
+
+Reference Data Types: thousands built-in 
+-These are more complex compared to primitives. 
+-Arrays, functions, objects, collections, Date, Time...
+
+
+let name; // undefined
+let name = null; // absence of data 
+
+let middleHicran;
+
+middleHicran = 'Zeynep';
+
+let middleJohn = null;
+
+1.2345678901234
+999999999999999
+
+
+Boolean 
+true or false 
+any expression that result in true or false 
+
+3 == 3          -> true 
+'abc' == 'abc'  -> true 
+'Abc' == 'ABC'  -> false 
+
+3 < 5           -> true 
+5 >= 5          -> true 
+
+2 * 2 == 4 && 'abc' != 'abc'    -> false
+2 * 2 == 4 || 'abc' != 'abc'    -> true 
+
