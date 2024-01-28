@@ -1,0 +1,125 @@
+
+
+
+RECAP:
+
+Data Types:
+
+PRIMITIVES: small, simple piece of data
+'', "", ``      -> string
+1, 3.5, 1.9999  -> number
+large number    -> bigint
+true or false   -> boolean
+undefined       -> declared variable but value is not assigned 
+null            -> variable assigned with null 
+symbol          -> it is used to symbolize some custom characters 
+
+
+NOTE: typeof operator is used to find the data type of one data.
+
+typeof 'Hello'; // string 
+typeof null; // object 
+
+
+REFERENCE TYPES - OBJECTS 
+-arrays, objects, functions, collections - data structures, libraries, dependencies
+
+Array: 
+    -collection of data stored as elements
+    -each element will be assigned an index by which you can update, delete, move
+
+
+Array First and Last elements 
+array[0]                    -> will always return first element 
+array[array.length - 1]     -> will always return last element 
+
+
+
+let student1_name = 'John';
+let student1_age = 25;
+let student1_address = 'Chicago';
+
+
+const student1 = {
+    name: 'John',
+    age: 25,
+    address: 'Chicago'
+};
+
+keys: name, age, address 
+values: 'John', 25, 'Chicago'
+
+
+const student2 = {
+    name: 'Hicran',
+    age: 15,
+    address: 'Evanston'
+};
+
+
+Assignment Operators: Used to assign values to variables.
+= is the assignment operator 
+
+let name = '';
+
+
+ORDER OF OPERATIONS
+pemdas
+1. parantheses
+2. Exponents
+3. multiplication or division
+4. addition or subtraction
+
+7.5 + 1.5 -> 9
+
+
+5 + 10 - 3 -> 12
+
+
+Modulus -> Remainder
+num1 % num2 
+
+1. left number > right number 
+Calculate and find the remainder 
+
+15 % 4 = 3
+
+2. right number > left number 
+Remainder is always the left number
+
+7 % 8 = 7
+
+
+3. right number equals left number 
+Remainder is always 0
+
+
+4. left number > right number and left number is divisible by right number 
+Remainder is always 0
+
+4 % 2 = 0
+
+
+
++ operator confusion 
+1. + is used for concatenation 
+1. + is used for addition 
+
+1 + 1           => 2
+'1' + '1'       => '11'
+1 + '1'         => '11' 
+'1' + 1         => '11'
+
+
+'1' + 1 + 1     => '111'
+'1' + (1 + 1)   => '12'
+
+3 * 5           => 15
+'3' * '5'       => 15 
+'15' / '5'      => 3
+
+'abc' * 'xyz'   => NaN (Not a Number)
+'abc' - 1 + 1     => 1
+
+
+NOTE: Be careful with + and - OPERATIONS due the + being used for both concatenation and addition
