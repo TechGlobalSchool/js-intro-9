@@ -1,0 +1,177 @@
+
+
+RECAP:
+
+Operators: 
+    -tools or special symbols used for math, comparison, logical and more operations with data.
+
+
+Assignment operator: equal sign 
++=
+-=
+*=
+**=
+/=
+%=
+
+Arihtmetic operator: math calculations 
++
+-
+*
+**
+/
+% 
+++  increment
+--  decrement
+
+
+NOTE: be careful for + operator as it is used for both concatanation and addition
+
+string + string         -> concatanation
+number + number         -> addition
+string + number         -> concatanation
+number + string         -> concatanation
+
+string + number + number + number 
+'a' + 1 + 2 + 3     -> 'a123' 
+'a' + (1 + 2 + 3)     -> 'a6' 
+
+number + number + number + string 
+1 + 2 + 3 + 'a'     -> '6a'
+
+
+17 % 25 = 17
+15 % 15 = 0
+17 % 5 = 2
+
+
+Shorthand Assignment Operators 
++=
+-=
+*=
+**=
+/=
+%=
+
+
+COMPARISOON Operators 
+2 == 2          -> true
+5 - 2 == 3      -> true 
+2 * 5 == 20 / 2 -> true 
+
+5 != 2          -> true 
+2 != 2          -> false
+
+
+'3' == 3        -> true 
+'3' === 3       -> false 
+3 === 3         -> true 
+'3' === '3'     -> true 
+
+'Hello' === 'Hello' -> true 
+'hello' === 'Hello' -> false 
+'hi' === 'hi '      -> false 
+'ab' === 'abc'      -> false
+
+3 !== 3         -> false 
+3 !== '3'       -> true 
+
+
+NOTE: == is used to check if 2 values are equal or not 
+=== is used to check if 2 values with their data types are equal or not
+
+
+3 < 5               -> true 
+5 * 2 < 10 % 2      -> false 
+
+5 > 2               -> true 
+5 >= 5              -> true 
+2 ** 4 >= 16        -> true 
+
+2 >= 3              -> false 
+
+
+let b1 = 2 >= 3;
+
+console.log(b1); // false
+
+
+
+let x = 10, y = 20, z = “10”;
+x == z;         -> true 
+x === z;        -> false
+y < z;          -> false
+x <= y;         -> true 
+x >= z;         -> true 
+y > x;          -> true 
+x >= y;         -> false
+(x >= z) < y;   -> true 
+
+
+Falsy values 
+0
+[]
+{}
+NaN 
+''
+undefined 
+null
+
+Truthy
+Everything that is not falsy or false will be true.
+
+
+LOGICAL Operators 
+&&  -> AND 
+||  -> OR 
+!   -> NOT 
+
+
+true && true        -> true 
+true && false       -> false 
+false && true       -> false 
+false && false      -> false 
+
+NOTE: With &&, you will get the result true only if both expressions are true 
+You will get false in any other case 
+
+true || true        -> true 
+true || false       -> true 
+false || true       -> true 
+false || false      -> false
+
+NOTE: With ||, you will get the result true when one or both expressions are true 
+The only way to get false is both expressions being false
+
+
+'' || null || undefined || 0 || NaN || false    -> false 
+
+true && 2 == 2 && 5 && !false && !(2 > 5)       -> true
+
+
+2 > 5 || !true || (3 === '3' && !false)     -> false 
+
+!(!(!false) && 3 !== 3) || 10 >= 5          -> true
+
+
+null || true        -> true 
+undefined || true   -> true 
+0 || true           -> true 
+'' || true          -> true 
+
+null ?? true        -> true 
+undefined ?? true   -> true 
+false ?? true       -> false
+'' ?? true          -> '' 
+
+
+?? is going to result in first expression if the first expression is not null/undefined 
+
+
+null ?? ______              -> ______
+undefined ?? ______         -> ______
+
+In the below expression both X and Y are not null or undefined
+__X___ ?? ___Y___           -> __X___
+
+
