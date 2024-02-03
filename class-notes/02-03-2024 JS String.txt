@@ -28,3 +28,21 @@ console.log(5 + str); // '515.5'
 console.log(5 + Number(str)); // 20.5
 console.log(5 + parseInt(str)); // 20
 console.log(5 + parseFloat(str)); // 20.5
+
+
+Property Access vs charAt() method 
+-property access return undefined for invalid indexes while charAt() returns '' (empty string)
+
+
+at() vs charAt()
+-at() method can take negative indexes and returns the character from the end of the index 
+at(-1) -> returns the last character 
+at(-2) -> returns the last second character 
+
+-charAt() always returns empty string ('') for the negative indexes
+
+-NOTE: for the indexes more than or equals the length of the string, at() returns undefined while charAt() returns '' (empty string)
+
+Search the string for the keys 'Java' in the second half of the string
+
+'JavaScript is awesome!'.includes('Java', 11) false
