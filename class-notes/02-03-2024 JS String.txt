@@ -1,0 +1,30 @@
+
+
+
+String: 
+    - anything reprensented in quotes ('', "", ``) - sequence of characters (a-zA-Z0-9-specials)
+
+'', "ab", "   ", "123", 'true', 
+
+-It is a primitive data type.
+-String concatenation (+)
+
+    'abc' + '12' + "xy"     -> 'abc12xy'
+
+String Templates - Template Literals (interpolation) -> ES6
+
+let price = 2;
+let quantity = 5;
+
+let message = `I bought ${quantity} apples for $${price * quantity}.`;
+
+console.log(message); // 'I bought 5 apples for $10.'
+
+
+WE CAN CONVERT OUR STRINGS TO NUMBERS using Number(), parseInt() and parseFloat()
+let str = '15.5';
+
+console.log(5 + str); // '515.5'
+console.log(5 + Number(str)); // 20.5
+console.log(5 + parseInt(str)); // 20
+console.log(5 + parseFloat(str)); // 20.5
