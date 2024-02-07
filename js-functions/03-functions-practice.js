@@ -77,3 +77,12 @@ inits('John Doe')      -> 'JD'
 inits('Adam Smith')    -> 'AS'
 inits('Max Smith')     -> 'MS'
 */
+
+function inits(fullname) {
+    // return fullname[0] + fullname[fullname.indexOf(' ') + 1];
+    const names = fullname.split(' '); // ['John', 'Doe']
+    return names[0][0] + names[1][0];
+}
+
+console.log(inits('John Doe'));
+console.log(inits('Alexander Doe'));

@@ -1,0 +1,51 @@
+
+
+
+JS Functions 
+
+Getting the middle char for a string which has odd length
+
+string          length          middle-index
+Mustafa         7               3   (str.length - 1) / 2 
+James           5               2   (str.length - 1) / 2
+ABC             3               1   (str.length - 1) / 2
+
+str[(str.length - 1) / 2]
+str[Math.floor(str.length / 2)]
+str[parseInt(str.length / 2)]
+
+
+Getting the middle 2 chars for a string which has even length
+
+1. using [] property access
+string          length          middle-indexes
+John            4               1 2         str[str.length / 2 - 1], str[str.length / 2]
+Jennifer        8               3 4         str[str.length / 2 - 1], str[str.length / 2]
+Toyota          6               2 3         str[str.length / 2 - 1], str[str.length / 2]
+
+2. using slice() method (PREFERRED)
+string          length          middle-indexes
+John            4               1 2         str.slice(1, 3);
+Jennifer        8               3 4         str.slice(str.length / 2 - 1, str.length / 2 + 1);
+Toyota          6               2 3         str.slice(str.length / 2 - 1, str.length / 2 + 1);
+
+
+Getting first 2 - last 2 and all the others from a string
+
+string      length          first-2             last-2                      others 
+Toyota      6               str.slice(0, 2)     str.slice(str.length - 2)   str.slice(2, str.length - 2)
+Mercedes    8               str.slice(0, 2)     str.slice(str.length - 2)   str.slice(2, str.length - 2)
+Tesla       5               str.slice(0, 2)     str.slice(str.length - 2)   str.slice(2, str.length - 2)
+
+
+NOTE: Use slice() when you are getting multiple characters. 
+DO NOT USE [] or at() or charAt() to get multiple characters
+
+
+let str = '___ some words ____';
+
+let firstWord = str.slice(0, str.indexOf(' '));
+let lastWord = str.slice(str.lastIndexOf(' ') + 1);
+let middle = str.slice(str.indexOf(' '), str.lastIndexOf(' ') + 1);
+
+console.log(lastWord + middle + firstWord);
