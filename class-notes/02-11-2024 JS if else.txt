@@ -273,3 +273,36 @@ SIX
 SEVEN
 NINE
 TEN
+
+
+
+SHORT if...else SYNTAX
+
+if(2 !== 3) {
+    console.log('TWO');
+}
+else {
+    console.log('THREE');
+}
+
+if(2 !== 3) console.log('TWO');
+else console.log('THREE');
+
+
+fname[0] === 'E' || fname[0] === 'e'
+fname[0].toLowerCase() === 'e'
+
+emily or Emily
+fname[0].toUpperCase() === 'E'
+
+
+by 3 and 5      -> -15, 0, 15, 30, 45
+
+by 2, 3 and 7   -> 0, 42, 84, 126
+
+by 7 and 8      -> 0, 56, 112, 224
+
+
+2 and 4         -> 4, 8, 12, 16, 20, 0
+
+2, 5, 10        -> 10, 20, 0
