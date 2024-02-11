@@ -1,0 +1,275 @@
+
+
+
+Conditionals Statements - Control Flow
+
+
+.
+.
+.
+.
+
+if(loggedIn) {
+    // navigate user to checkout page
+}
+else {
+    // navigate user to login page
+    if(userNameValid) {
+        // Ask password
+        if(passwordValid) {
+            // let user in and navigate them to checkout
+        }
+        else {
+            // Error: state password is not valid
+        }
+    }
+    else {
+        // Error: state username is not valid
+    }
+}
+
+.
+.
+.
+.
+.
+
+
+1. if statements 
+
+SYNTAX:
+
+if(condition) {
+    // block
+}
+
+EXAMPLE 1: 
+console.log('Hello');
+
+if(5 === 3) {
+    console.log('Nice');
+}
+
+console.log('World');
+
+Output:
+Hello
+World
+
+
+EXAMPLE 2: 
+console.log('Hello');
+
+if('abc' === 'abc') {
+    console.log('Nice');
+}
+
+console.log('World');
+
+Output: 
+Hello 
+Nice 
+World 
+
+
+2. if...else statements 
+
+SYNTAX:
+
+if(condition) {
+    // block 1
+}
+else {
+    // block 2
+}
+
+if the condition is true or truthy, then block 1 will be executed
+if the condition is false or falsy, then block 2 will be executed
+if block can be used without any else if or else blocks 
+BUT, else or else if cannot be used without an if statements 
+
+EXAMPLE 1:
+
+console.log('ONE');
+
+if(2 !== 3) {
+    console.log('TWO');
+}
+else {
+    console.log('THREE');
+}
+
+console.log('FOUR');
+
+Output:
+ONE 
+TWO 
+FOUR
+
+
+EXAMPLE 2:
+
+console.log('ONE');
+
+if(2 % 2 === 1) {
+    console.log('TWO');
+}
+else {
+    console.log('THREE');
+}
+
+console.log('FOUR');
+
+Output:
+ONE 
+THREE 
+FOUR 
+
+
+3. if...else if...else 
+
+SYNTAX: 
+if(condition1) {
+    // block 1
+}
+else if(condition2) {
+    // block 2
+}
+else if(condition3) {
+    // block 3
+}
+else {
+    // block 4
+}
+
+if the condition1 true, then block 1 will be executed
+if the condition1 false and condition2 is true, then block 2 will be executed
+if the condition1 false and condition2 is false and condition3 is true, then block 3 will be executed
+if the condition1 false and condition2 is false and condition3 is false, then block 4 will be executed
+
+
+EXAMPLE 1:
+
+console.log('ZERO');
+
+if(true) {
+    console.log('ONE');
+}
+else if(true) {
+    console.log('TWO');
+}
+else if(true) {
+    console.log('THREE');
+}
+else {
+    console.log('FOUR');
+}
+
+console.log('FIVE');
+
+Output:
+ZERO 
+ONE
+FIVE
+
+
+EXAMPLE 2:
+
+console.log('ZERO');
+
+if(false) {
+    console.log('ONE');
+}
+else if(true && false) {
+    console.log('TWO');
+}
+else if(true && !true) {
+    console.log('THREE');
+}
+else {
+    console.log('FOUR');
+}
+
+console.log('FIVE');
+
+Output:
+ZERO 
+FOUR 
+FIVE
+
+
+4. nested if else blocks 
+
+
+EXAMPLE 1:
+
+console.log('ONE'); 
+
+if(5 == '5') {
+    console.log('TWO');
+    if(false) {
+        console.log('THREE');
+    }
+    else if(true && false) {
+        console.log('FOUR');
+    }
+    else {
+        console.log('FIVE');
+    }
+}
+else {
+    console.log('SIX');
+    if(false || !true || 2) {
+        console.log('SEVEN');
+    }
+    else {
+        console.log('EIGHT');
+    }
+}
+
+console.log('NINE');
+console.log('TEN');
+
+Output:
+ONE
+TWO
+FIVE
+NINE 
+TEN
+
+
+EXAMPLE 2:
+
+console.log('ONE'); 
+
+if(3 ** 3 === '27') {
+    console.log('TWO');
+    if(false) {
+        console.log('THREE');
+    }
+    else if(true && false) {
+        console.log('FOUR');
+    }
+    else {
+        console.log('FIVE');
+    }
+}
+else {
+    console.log('SIX');
+    if(false || !true || 2) {
+        console.log('SEVEN');
+    }
+    else {
+        console.log('EIGHT');
+    }
+}
+
+console.log('NINE');
+console.log('TEN');
+
+Output:
+ONE 
+SIX
+SEVEN
+NINE
+TEN
