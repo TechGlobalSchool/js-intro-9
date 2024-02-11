@@ -127,6 +127,7 @@ console.log(s3[s3.length / 2 - 1] + s3[s3.length / 2]);
 console.log(s3.slice(s3.length / 2 - 1, s3.length / 2 + 1));
 
 /*
+TASK 05
 Requirement:
 Write a program that divides the given String. Assume the length of the String will at least 
 be 4.
@@ -163,8 +164,24 @@ console.log('The first 2 characters are = ' + s4.slice(0, 2));
 console.log('The last 2 characters are = ' + s4.slice(-2));
 console.log('The other characters  are = ' + s4.slice(2, -2));
 
+/*
+TASK08
+Requirement:
+Write a program that checks if a given String starts and ends with xx. 
+-If given String starts and ends with xx, then print true. 
+-Otherwise, print false
+*/
+let str8 = 'xxbanabaxx';
+console.log(str8.startsWith('xx') && str8.endsWith('xx'));
+// let first2Chars = str8.slice(0,2);
+// let last2Chars = str8.slice(-2);
+
+// console.log(first2Chars === 'xx' && last2Chars === 'xx')
+
+
 
 /*
+TASK 09
 Requirement:
 Write a program that swaps the first and last word of a given sentence as a String. 
 
@@ -206,6 +223,7 @@ let middle = s8.slice(s8.indexOf(' '), s8.lastIndexOf(' ') + 1);
 console.log(lastWord + middle + firstWord);
 
 /*
+TASK 10
 Requirement:
 Write a program that counts the number of words in a given sentence as a String. 
 Assume you will not be given redundant whitespaces and at least one word.
