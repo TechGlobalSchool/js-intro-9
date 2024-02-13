@@ -1,0 +1,57 @@
+
+
+
+let fname = '';
+let gender = '';
+
+// Alex
+// Emma
+
+if(gender === 'male') {
+    fname = 'Alex';
+}
+else {
+    fname = 'Emma';
+}
+
+console.log(fname);
+
+TERNARY OPERATOR
+gender === 'male' ? fname = 'Alex' : fname = 'Emma';
+
+gender === 'female' ? fname = 'Emma' : fname = 'Alex';
+
+console.log(fname);
+
+// the number will be either 1, 2 or 3
+// num = 1 then letter = 'A'
+// num = 2 then letter = 'B'
+// num = 3 then letter = 'C'
+
+let num = 1;
+let letter;
+
+// 1. If - else solution
+
+    if(num === 1) letter = 'A';
+    else if(num === 2) letter = 'B';
+    else letter = 'C';
+
+
+// 2. Ternary operator solution
+    letter = num === 1 ? 'A' : num === 2 ? 'B' : 'C';
+
+
+// 3. Switch solution
+
+    switch(num) {
+        case 1: 
+            letter = 'A';
+            break;
+        case 2: 
+            letter = 'B';
+            break;
+        case 3: 
+            letter = 'C';
+            break;
+    }
