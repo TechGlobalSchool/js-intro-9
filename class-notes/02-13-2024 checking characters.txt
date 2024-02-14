@@ -1,0 +1,26 @@
+
+
+
+ASCII:
+
+Character                   ASCII Decimal
+Space                       32
+Digits [0-9]                48 - 57 (inclusive)
+Uppercase letters [A-Z]     65 - 90 (inclusive)
+Lowercase letters [a-z]     97 - 122 (inclusive)
+
+
+charCodeAt(index) -> ASCII Decimal representation of the character at given index 
+
+
+Special Character 
+Not space 
+Not letter 
+Not digit
+
+
+let str = 'sdkjghskdjhgskjfdhgkjfhdgkd4398569346   #$^TTTTTSDGJDFKGJDF#$';
+
+// print true if str has an uppercase letter, or false otherwise.
+
+str.toLowerCase() !== str;
