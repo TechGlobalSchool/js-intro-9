@@ -1,0 +1,104 @@
+
+
+CLI: Command Line Interface 
+GUI: Graphical User Interface 
+
+
+MAC: Terminal 
+Windows: Command Prompt, Shell, PowerShell 
+
+Home Directory: 
+MAC: Users/{username}   Users/techglobal
+Windows: C:\Users\{username} 
+
+
+Root Directory: 
+MAC: /
+Windows: C:\
+
+Directory = Folder or Location 
+
+PATH - Location of the js-intro-9
+Users/techglobal/Desktop/js-intro-9
+
+
+1. Check your current location - where you are
+MAC: pwd
+Windows: cd 
+
+2. List the folders and files in the current location 
+MAC: ls or ls -a (to see hidden files as well)
+Windows: dir 
+
+
+3. Clear working space - Terminal or Command Prompt 
+MAC: clear
+Windows: cls
+
+
+4. Navigate into child directory 
+MAC & Windows: cd {directoryName}
+
+5. Navigate back to parent directory 
+MAC & Windows: cd ..
+
+Move multiple steps :
+Child in MAC: cd {firstChild}/{secondChild}/{thirdChild}
+Child in Windows: cd {firstChild}\{secondChild}\{thirdChild}
+
+Parent in MAC: cd ../../../..
+Parent in Windows: cd ..\..\..\..
+
+
+6. Creating new folders or directories
+MAC & Windows: mkdir {directoryName}
+
+NOTE: If your folder has multiple words in the name 
+mkdir "{directoryName}" 
+
+NOTE: If you want to create multiple folders at once 
+mkdir {directoryName1} {directoryName2} 
+
+
+7. Deleting existing folders or directories which are empty
+MAC & Windows: rmdir {directoryName}
+
+NOTE: If your folder has multiple words in the name 
+rmdir "{directoryName}" 
+
+NOTE: If you want to create multiple folders at once 
+rmdir {directoryName1} {directoryName2}
+
+
+8. Deleting existing folders or directories which are NOT empty
+MAC: rm -rf {directoryName}
+Windows: rmdir /s {directoryName} deleting with caution (Y/N) 
+Windows: rmdir /s /q {directoryName} delete with no question
+
+
+9. Navigating to the root directory from anywhere
+MAC & Windows: cd /
+
+
+10. Navigating to the home directory from anywhere
+MAC: cd ~ or cd
+Windows: cd %userprofile%
+
+
+11. Creating new empty files 
+MAC: touch {fileName}
+Windows: echo. > {fileName}
+
+
+12. Deleting existing files 
+MAC: rm {fileName}
+Windows: del {fileName}
+
+
+13. Creating a new file with initial text
+MAC & Windows: echo "{content}" > {fileName} 
+
+
+Visual Studio Code is an IDE 
+IDE: Integrated Development Environment 
+Extensions, terminal, console, debugging, organizing, folder structure, version control integration
