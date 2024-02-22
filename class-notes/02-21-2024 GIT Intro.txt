@@ -1,0 +1,42 @@
+
+
+GIT: Global Information Tracker
+    -it monitors the changes in a project
+    -it allows team members to work together in the same project 
+
+GIT is a Version Control System (VCS)
+
+GitHub: is a hosting website 
+GitLab
+Bitbucket
+
+
+Pushing a local project to REMOTE (GitHub/GitLab/Bitbucket repo)
+1. Create a local project 
+2. Create a remote repo 
+3. Initialize your local project with
+    git init 
+4. Link your local project with remote repository with 
+    git remote add origin <remote url>
+5. Stage, commit and push changes 
+    git add filename -> used to stage only specified file
+    git add . -> used to stage all the modified file
+    git commit -m "message"
+    git push -u origin <branch name> -> used for the first push with a new branch 
+    git push -> used after the first push
+
+
+Cloning a REMOTE repository to your local 
+1. Create a REMOTE repo 
+2. Clone the remote repo your local with 
+    git clone <remote url>
+3. Make some changes
+4. Stage, commit and push changes 
+    git add filename -> used to stage only specified file
+    git add . -> used to stage all the modified file
+    git commit -m "message"
+    git push -u origin <branch name> -> used for the first push with a new branch 
+    git push -> used after the first push
+
+
+    git@github.com:TechGlobalSchool/git_demo9.git
