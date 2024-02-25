@@ -89,7 +89,7 @@ STATIC or NON-STATIC: non-static
 DOES IT CHANGE ORIGINAL ARRAY: NO
 
 
-8. lastIndexOf() method 
+9. lastIndexOf() method 
 TASK: used to check if array contains the specified element 
 RETURN: it returns an index as a number which is the last occurrence of the element or -1 is the element is not found 
 ARGUMENTS: it takes one element as an argument 
@@ -97,11 +97,43 @@ STATIC or NON-STATIC: non-static
 DOES IT CHANGE ORIGINAL ARRAY: NO
 
 
+10. concat() method
+TASK: used to merge one or more arrays with another array 
+RETURN: it returns a new array which is the merged array 
+ARGUMENTS: it takes one or more arguments (arrays or individual elements)
+STATIC or NON-STATIC: non-static 
+DOES IT CHANGE ORIGINAL ARRAY: NO 
 
 
+NOTE: Spread operator can also be used to merge arrays into a new array 
+Spread operator is added with ES6 
 
-TASK: 
-RETURN: 
-ARGUMENTS:
-STATIC or NON-STATIC: 
-DOES IT CHANGE ORIGINAL ARRAY:
+SYNTAX: 
+[...arr1, ...arr2, el1 ]
+
+
+11. reverse() method 
+TASK: it reverses the order of the element in the array
+RETURN: returns the same array in the reversed order
+ARGUMENTS: no argument 
+STATIC or NON-STATIC: non-static 
+DOES IT CHANGE ORIGINAL ARRAY: YES
+
+
+12. slice() method 
+TASK: used to retrive a partial array from the original using begin and end (optional) indexes 
+RETURN: returns a new partial array
+ARGUMENTS: one or two indexes (start and end indexes, start is included while end is excluded)
+STATIC or NON-STATIC: non-static 
+DOES IT CHANGE ORIGINAL ARRAY: NO
+
+
+13. splice() method 
+TASK: used to add or remove elements anywhere within the array 
+RETURN: returns the removed elements as an array 
+ARGUMENTS: 2 or more arguements 
+    1st argument is the start position-index 
+    2nd arguement is the number elements you want to remove including the start position-index 
+    3rd... are the new elements to be added after the start position-index 
+STATIC or NON-STATIC: non-static 
+DOES IT CHANGE ORIGINAL ARRAY: YES 
