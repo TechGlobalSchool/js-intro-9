@@ -1,0 +1,107 @@
+
+
+Array: It is a reference type and it is used to store multiple data 
+
+numbers array
+const numbers = [ 1, 5, 9, 17 ];
+
+booleans array
+const booleans = [ true, false, 2 === 2, 'Hello' == 'Hi' ];
+
+mixed data in an array 
+const datas = [ 6, 'Hello', true, {}, [], null, undefined ]; 
+
+
+length property -> used to get the size of the array
+
+const arr = [ el1, el2, el3, el4 ]; 
+
+arr.length; // 4
+
+arr[2]; // el3
+
+
+Arrays are stored using indexes - indices starting from zero
+
+NOTE: invalid indexes will return undefined 
+
+1. at() method
+TASK: used to retrieve an element from an array using its index
+RETURN: an element found at the given index
+ARGUMENTS: it takes an index as an argument 
+STATIC or NON-STATIC: non-static because it is invoked with an array variable 
+DOES IT CHANGE ORIGINAL ARRAY: NO
+
+
+2. isArray() method
+TASK: used to check if a variable is array or not 
+RETURN: it returns a boolean, it returns true if the variable is array, or false otherwise
+ARGUMENTS: it takes a variable as an argument
+STATIC or NON-STATIC: static
+DOES IT CHANGE ORIGINAL ARRAY: NO
+
+
+3. push() method 
+TASK: used to add one or more elements to end of the array 
+RETURN: it returns the new length of the array after adding one or more elements 
+ARGUMENTS: it takes one or more elements
+STATIC or NON-STATIC: non-static
+DOES IT CHANGE ORIGINAL ARRAY: YES
+
+
+4. pop() method
+TASK: used to remove the last element in the array 
+RETURN: it returns the removed element 
+ARGUMENTS: no-argument 
+STATIC or NON-STATIC: non-static 
+DOES IT CHANGE ORIGINAL ARRAY: YES 
+
+
+5. unshift() method 
+TASK: used to add one or more elements to the start of the array 
+RETURN: it returns the new length of the array after adding one or more elements 
+ARGUMENTS: it takes one or more elements
+STATIC or NON-STATIC: non-static
+DOES IT CHANGE ORIGINAL ARRAY: YES
+
+
+6. shift() method 
+TASK: used to remove the first element in the array 
+RETURN: it returns the removed element 
+ARGUMENTS: no-argument 
+STATIC or NON-STATIC: non-static 
+DOES IT CHANGE ORIGINAL ARRAY: YES 
+
+
+7. includes() method
+TASK: used to check if array contains the specified element 
+RETURN: it returns a boolean, it returns true if the element is found in the array or false otherwise
+ARGUMENTS: it takes one element as an argument 
+STATIC or NON-STATIC: non-static 
+DOES IT CHANGE ORIGINAL ARRAY: NO 
+
+
+8. indexOf() method 
+TASK: used to check if array contains the specified element 
+RETURN: it returns an index as a number which is the first occurrence of the element or -1 is the element is not found 
+ARGUMENTS: it takes one element as an argument 
+STATIC or NON-STATIC: non-static 
+DOES IT CHANGE ORIGINAL ARRAY: NO
+
+
+8. lastIndexOf() method 
+TASK: used to check if array contains the specified element 
+RETURN: it returns an index as a number which is the last occurrence of the element or -1 is the element is not found 
+ARGUMENTS: it takes one element as an argument 
+STATIC or NON-STATIC: non-static 
+DOES IT CHANGE ORIGINAL ARRAY: NO
+
+
+
+
+
+TASK: 
+RETURN: 
+ARGUMENTS:
+STATIC or NON-STATIC: 
+DOES IT CHANGE ORIGINAL ARRAY:
