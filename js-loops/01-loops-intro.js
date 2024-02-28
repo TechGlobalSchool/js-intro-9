@@ -34,3 +34,8 @@ for(let i = 0; i <= 10; i += 2) {
 for(let i = 50; i >= 0; i -= 10) {
     console.log(i);
 }
+
+
+for(let i = 1; i <= 20; i++) {
+    console.log('Hello name!');
+}

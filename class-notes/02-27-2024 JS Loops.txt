@@ -1,0 +1,23 @@
+
+
+Loops: are useful for iterating repeating tasks 
+
+Iteration: each cycle running in a loop 
+
+1. FOR LOOP 
+
+SYNTAX:
+for(initialization; termination_condition; update) {
+    // code block
+}
+
+for(let i = 0; i <= 5; i++) {
+   console.log(i);
+}
+
+0
+1
+2
+3
+4
+5
