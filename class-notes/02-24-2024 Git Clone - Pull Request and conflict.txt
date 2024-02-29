@@ -1,0 +1,28 @@
+
+There is already a project
+1. You need to clone it
+2. Create your own branch
+3. Stage, commit, push your changes in your own branch
+4. Create PR/MR and add reviewers
+5. Reviewers will approve your PR/MR and close it
+6. Checkout to master/main and pull the last changes
+7. Delete your previous local branch and start with a new
+
+
+
+GIT CONFLICT
+-it happens if 2 or more team members modify the same file/files and one did not pull the last changes by others and they try to merge their code to remote master.
+
+RESOLVE:
+1. Quick fix: GitHub/GitLab/Bitbucket inline fixing if the conflict is small and can be fixed quickly
+
+2. Resolving in your local
+	Go to your local
+	Checkout to master
+	git pull
+	Checkout to your local branch
+	git merge master
+	Fix the code and conflict
+	git add .
+	git commit -m "resolve message"
+	git push
