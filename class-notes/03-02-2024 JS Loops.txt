@@ -24,14 +24,53 @@ while(i <= 10) {
     i++;
 }
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
 
+
+
+if you know exactl how many times your loop is going to iterate -> FOR LOOP 
+if you don't know how many times your loop is going to iterate -> WHILE or DO-WHILE LOOP 
+
+
+                                Do you know total number of iteration 
+                            YES                                         NO
+                          for loop                                  while or do-while 
+
+                                                                Is it running at least once? 
+                                                                YES                         NO 
+                                                              do-while                     while
+
+
+
+
+Divide your task into 3 parts 
+
+1. Create your default variables which will eventually be your results
+2. Loop thru your data and fill out your default variables
+3. Return or log your results  
+
+
+let count = 0;
+
+for(let i = 0; i <= 20; i++) {
+    if(i % 2 === 0) count++;
+}
+
+console.log(count);
+
+
+3, 5    -> 1
+1, 7    -> 3
+13, 20  -> 4
+
+
+function countEven(start, end) {
+    let count = 0;
+
+    for(let i = start; i <= end; i++) {
+         if(i % 2 === 0) count++;
+    }
+
+    return count;
+}
+
+console.log(countEven(13, 20));
