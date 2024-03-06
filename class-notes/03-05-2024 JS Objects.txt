@@ -1,0 +1,19 @@
+
+
+Object: collection of key-value pairs (properties)
+Reference data type 
+
+// Simple string
+let person_name = 'John' 
+let person_age = 25;
+let person_fav_number = 7;
+
+
+const person = {
+    firstName: 'John',
+    lastName: 'Doe',
+    spouse: 'Jane Doe',
+    age: 25,
+    favNumber: 7
+};
+
