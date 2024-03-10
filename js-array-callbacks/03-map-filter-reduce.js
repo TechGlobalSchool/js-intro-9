@@ -24,3 +24,8 @@ console.log(evenOdd);
 
 
 console.log(numbers.reduce((sum, curr) => sum + curr), 0);
+
+
+setTimeout(() => {
+    console.log('Good morning!');
+}, 5000);
