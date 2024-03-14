@@ -1,0 +1,5 @@
+
+Both call and apply are used to define this and additional arguments for the specified object
+
+aMethod.call(this, arguments)
+aMethod.apply(this, [arguments])

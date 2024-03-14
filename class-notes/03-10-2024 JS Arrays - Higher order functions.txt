@@ -1,0 +1,123 @@
+
+Higher order function: this is fucntion takes another function as an argument
+Callback function: this is a function used as an argument in another function
+
+
+functionA(functionB);
+
+functionA: Higher order function 
+functionB: Callback function 
+
+
+1. Function declaration
+function functionName (args) {
+    // block
+}
+
+
+2. Function expression 
+const functionName = function (args) {
+    // block
+}
+
+
+3. Arrow function 
+const functionName = (args) => {
+    // block
+}
+
+
+Array - forEach() method
+-this method is non-static
+-it does not return anything (it is a void method)
+-it takes a callback function as an argument 
+-it executes the callback function for each element in the Array
+-it does not change the original array 
+
+const cities = [ 'Chicago', 'Berlin', 'Rome' ];
+
+let firstLetters = ''; // 'CBR'
+
+cities.forEach(function (city) {
+    firstLetters += city[0];
+});
+
+cities.forEach((city) => firstLetters += city[0])
+
+console.log(firstLetters); // 'CBR'
+console.log(cities); // [ 'Chicago', 'Berlin', 'Rome' ]
+
+
+Array - map() method
+-this method is non-static
+-it returns a new array with the new elements (manipulated from the original array)
+-it takes a callback function as an argument 
+-it executes the callback function for each element in the Array
+-it does not change the original array 
+
+NOTE: The new array size is always same as the original size 
+
+
+Array - filter() method
+-this method is non-static
+-it returns a new array with the new elements (filtered from the original array)
+-it takes a callback function as an argument 
+-it executes the callback function for each element in the Array
+-it does not change the original array 
+
+NOTE: The new array size is usually less than the original size 
+
+
+Array - find() method
+-this method is non-static
+-it returns first element matching a condition
+-it takes a callback function as an argument 
+-it executes the callback function for each element in the Array
+-it does not change the original array 
+NOTE: it returns undefined if no element is matching the condition
+
+Array - findIndex() method
+-this method is non-static
+-it returns first element's index matching a condition
+-it takes a callback function as an argument 
+-it executes the callback function for each element in the Array
+-it does not change the original array 
+NOTE: it returns -1 if no element is matching the condition
+
+Array - findLast() method
+-this method is non-static
+-it returns last element matching a condition
+-it takes a callback function as an argument 
+-it executes the callback function for each element in the Array
+-it does not change the original array 
+NOTE: it returns undefined if no element is matching the condition
+
+Array - findLastIndex() method
+-this method is non-static
+-it returns last element's index matching a condition
+-it takes a callback function as an argument 
+-it executes the callback function for each element in the Array
+-it does not change the original array 
+NOTE: it returns -1 if no element is matching the condition
+
+
+Array - some() method
+-this method is non-static
+-it returns true if some of the elements in the original array are matching a condition or false otherwise
+-it takes a callback function as an argument 
+-it executes the callback function for each element in the Array
+-it does not change the original array 
+
+
+Array - every() method
+-this method is non-static
+-it returns true if each of the elements in the original array are matching a condition or false otherwise
+-it takes a callback function as an argument 
+-it executes the callback function for each element in the Array
+-it does not change the original array 
+
+
+if(number % 2 === 0) return count+1;
+else return count;
+
+return number % 2 === 0 ? count + 1 : count

@@ -162,7 +162,7 @@ function max(array) { // 1, 2, 3, -2
 
 /*
 Requirement:
-Write a function named as min() which takes an array as an argument and returns the greatest element when invoked.
+Write a function named as min() which takes an array as an argument and returns the smallest element when invoked.
 NOTE: Assume you will not be given an empty array, and it contains only number elements.
  
 Examples:
