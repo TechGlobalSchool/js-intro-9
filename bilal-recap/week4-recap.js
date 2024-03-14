@@ -18,7 +18,7 @@ for(let i = 0; i < name.length; i++){
 let str = "helloWorld"
 let reveredStr = "";
 
-for(let i = str.length - 1; i >= 0; i=i-1){
+for(let i = str.length; i >= 0; i--){
     console.log(str.at(i))
 }
 
