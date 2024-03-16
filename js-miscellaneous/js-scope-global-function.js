@@ -28,6 +28,8 @@ factorial(3)    -> 6
 */
 
 
+// n & result variables are function-scoped
+// i is block-scoped within the function
 function factorial(n) {
     let result = 1;
 

@@ -15,6 +15,12 @@ var is hoisted.
 let and const are not hoisted.
 
 
+JAVASCRIPT SCOPE 
+-Scope is deciding the accessibility of the variables in different context
+-BEFORE ES6: Global scope and function scope (var-let-const)
+-AFTER ES6: Block scope and lexical scope (let-const)
+
+
 Global scope: can be used anywhere within the file but be careful about the declaration (don't use any
 variables before their declaration)
 
@@ -23,3 +29,29 @@ Function Scope: variables created within the function can only be used in that f
 them outside the function body.
 
 
+NOTE: Global and Function Scopes were there before ES6 and still in use. 
+var, let and const behaves same for these 2 scope types.
+var and let are exactly same for these scopes while const is also same but cannot be re-assigned.
+
+
+Block scope:
+Came after ES6 and that is why applies to let and const only.
+var keyword does not support block-scope 
+
+
+{
+    let a,
+    const b,
+    var c,
+
+    // all these variables can be used here in the same block
+}
+
+// only var can be used here outside the block
+
+
+Lexical Scope: Used in case of nested functions and defines the accessibility of variables for 
+inner and outer functions.
+-var, let and const behaves same for lexical scope
+
+The inner function can access to outer function variables but visa versa is not allowed.
