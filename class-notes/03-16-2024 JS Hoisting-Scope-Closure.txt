@@ -1,0 +1,25 @@
+
+
+JS Hoisting: (BEFORE ES6)
+-Moving the declaration of variables to the top
+
+
+var, let, const
+var -> before ES6 
+let, const -> After ES6
+
+var name = 'John';
+
+
+var is hoisted.
+let and const are not hoisted.
+
+
+Global scope: can be used anywhere within the file but be careful about the declaration (don't use any
+variables before their declaration)
+
+
+Function Scope: variables created within the function can only be used in that function body. You cannot use
+them outside the function body.
+
+
