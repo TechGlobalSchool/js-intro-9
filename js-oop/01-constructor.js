@@ -49,6 +49,7 @@ const student_morgan = {
 }
 */
 
+// BEFORE ES6
 // Create a Student template from which you can create many similar student objects  - constructor function
 function Student(fname, lname, age) {
     this.fname = fname;
@@ -78,3 +79,8 @@ console.log(student_morgan);
 
 student_alex.study();
 student_morgan.getAge();
+
+const students = [student_john, student_jane, student_alex, student_morgan];
+const fullnames = students.map(x => `${x.fname} ${x.lname}`);
+
+console.log(fullnames); // [ 'John Doe', 'Jane Doe', 'Alex Smith', 'Morgan Smith' ]

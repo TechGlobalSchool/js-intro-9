@@ -66,3 +66,38 @@ arr[0] = 'str';
 
 Prototype-based -> JavaScript 
 Object-based -> Java, C#
+
+
+
+PROTOTYPES BEFORE ES6
+function Student(fname, lname, age) {
+    this.fname = fname;
+    this.lname = lname;
+    this.age = age;
+}
+
+// Adding functions to prototype
+Student.prototype.study = function () {
+    console.log(`${this.fname} ${this.lname} studies.`);
+}
+
+Student.prototype.getAge = function () {
+    console.log(`${this.fname} ${this.lname} is ${this.age} years old.`);
+}
+
+
+CLASSES AFTER ES6 - syntatic sugar with syntax
+class Student {
+    constructor(fname, lname, age) {
+        this.fname = fname;
+        this.lname = lname;
+        this.age = age;
+    }
+    // Adding functions to prototype
+    study() {
+        console.log(`${this.fname} ${this.lname} studies.`);
+    }
+    getAge() {
+        console.log(`${this.fname} ${this.lname} is ${this.age} years old.`);
+    }
+}
