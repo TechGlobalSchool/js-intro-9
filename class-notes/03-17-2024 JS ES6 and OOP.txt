@@ -17,3 +17,52 @@ const [fav1Act, fav2Act, fav3Act, fav4Act] = arr;
 
 // Skip some elements in the middle
 const [fav1Act, , , fav4Act] = arr;
+
+
+
+OOP - Object-Oriented Programming
+Allows programmers to put real-life objects into programming
+
+
+Compiled languages like Java, C#, TypeScript
+These are class oriented OOP languages
+
+JavaScript 
+Prototype-based functional language 
+ES6 added classes in JS as well.
+
+
+TypeScript is a superset of JavaScript. It does all JS does + it is typed language.
+let a = 'John';
+
+a = 25;
+
+a = true;
+
+a = new Date();
+
+a was string, then number, then boolean
+
+In the above example, you can see that JavaScript is dynamically-typed language.
+
+Statically-typed languages like Java, C#
+int num = 4;
+
+num = false; // error
+
+String name = "John";
+name = new Date();
+
+TypeScript 
+let a:string = 'John';
+
+a = 25; // Error
+
+const arr:number[] = [1, 2, 3]
+
+arr[0] = 'str';
+
+
+
+Prototype-based -> JavaScript 
+Object-based -> Java, C#
