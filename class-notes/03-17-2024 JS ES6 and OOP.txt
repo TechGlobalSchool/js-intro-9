@@ -1,3 +1,19 @@
 
 
 
+Destructuring: is a helpful feature to get some elements or properties from arrays or objects.
+
+Array Destructuring:
+
+const arr = ['Biking', 'Coding', 'Reading', 'PS5'];
+
+const fav1Act = arr[0];
+const fav2Act = arr[1];
+const fav3Act = arr[2];
+const fav4Act = arr[3];
+
+// Destructuring
+const [fav1Act, fav2Act, fav3Act, fav4Act] = arr;
+
+// Skip some elements in the middle
+const [fav1Act, , , fav4Act] = arr;
