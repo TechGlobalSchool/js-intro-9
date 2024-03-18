@@ -1,0 +1,23 @@
+
+
+Prototype (before ES6) or classes (after ES6) are used to create templates from which we can create many objects (instances)
+
+1. Create a template - prototype using constructor function 
+
+function Product(name, price, quantity) {
+    // 2. assign the given data (local variables) to this keyword which refers to the current object
+    this.name = name;
+    this.price = price;
+    this.quantity = quantity; 
+}
+
+3. Create template methods
+Product.prototype.sell = function (quantity) {
+    this.quantity -= quantity;
+}
+
+4. Create many objects or instances from your template
+const product1 = new Product('Remote', 10, 6);
+const product2 = new Product('Monitor', 100, 5);
+const product3 = new Product('Laptop', 1000, 3);
+const product4 = new Product('Phone', 500, 10);
