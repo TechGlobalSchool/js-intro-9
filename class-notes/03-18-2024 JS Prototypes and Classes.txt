@@ -21,3 +21,23 @@ const product1 = new Product('Remote', 10, 6);
 const product2 = new Product('Monitor', 100, 5);
 const product3 = new Product('Laptop', 1000, 3);
 const product4 = new Product('Phone', 500, 10);
+
+
+// AFTER ES6 - we do not use constructor prototype anymore
+class Car {
+    // create a constructor
+    constructor(year, make, model, price) {
+        this.year = year;
+        this.make = make;
+        this.model = model;
+        this.price = price;
+    }
+}
+
+// constructor function to create a prototype
+function Car(year, make, model, price) {
+    this.year = year;
+    this.make = make;
+    this.model = model;
+    this.price = price;
+}
