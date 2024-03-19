@@ -41,3 +41,12 @@ function Car(year, make, model, price) {
     this.model = model;
     this.price = price;
 }
+
+
+Class is a template or blueprint used to create many objects
+Object is an instance of a class 
+Constructor is a special method used to create objects from a class or prototype (used together with new keyword)
+Properties are also known as states, fields or instance variables and used to define the object information
+Functions are the methods of the objects or class 
+
+NOTE: new keyword is a reserved keyword used to create objects from a class or prototype
