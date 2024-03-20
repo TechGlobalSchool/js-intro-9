@@ -56,3 +56,27 @@ INHERITANCE RULES
 -inherited prototype or class will be considered as parent 
 -parent can have multiple children
 -child can have only one parent
+
+
+
+ES6 Classes 
+
+class A extends B {
+
+}
+
+- in this case A is the child class - subclass 
+- B is parent class - super class - base class
+
+Classes provide you the default constructor when you don't create any custom ones.
+However, it will be gone once you create a custom constructor
+
+class Person {
+
+}
+
+class Person {
+    constructor() {} // this is here bu default
+}
+
+const p = new Person();
