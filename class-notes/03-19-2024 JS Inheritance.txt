@@ -1,0 +1,58 @@
+
+
+
+RECAP:
+
+JS Prototypes or Classes are used to improve the reusability of the objects
+
+Prototype or class = template from which you can create many objects 
+Objects or instances are created from prototypes or classes using constructor together with new keyword
+
+CONSTRUCTOR: special method used to create objects 
+
+BEFORE ES6 - Prototype 
+
+1. create a constructor function
+function Dog(name, breed, age) {
+    this.name = name;
+    this.breed = breed;
+    this.age = age;
+}
+
+2. add prototype functions 
+
+Dog.prototype.bark = function () {
+    //body
+}
+
+3. Create your objects from the Dog constructor function
+
+const dog1 = new Dog('Lucky', 'German Shephard', 3);
+const dog2 = new Dog('ab', 'German Shephard', 2);
+const dog3 = new Dog('xy', 'Collie', 4);
+
+
+
+AFTER ES6 
+class Dog {
+    constructor(name, breed, age) {
+        this.name = name;
+        this.breed = breed;
+        this.age = age;
+    }
+
+    bark() {
+        // body
+    }
+}
+
+const dog1 = new Dog('Lucky', 'German Shephard', 3);
+const dog2 = new Dog('ab', 'German Shephard', 2);
+const dog3 = new Dog('xy', 'Collie', 4);
+
+
+INHERITANCE RULES 
+-inheriting prototype or class will be considered as child
+-inherited prototype or class will be considered as parent 
+-parent can have multiple children
+-child can have only one parent
