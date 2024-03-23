@@ -1,0 +1,83 @@
+
+
+What is IS-A-RELATIONSHIP?
+-That means inheritance: one class inheriting functions and properties from another class using extends keyword
+EX: Person/Singer or Person/Author
+EX: Member/VIPMember
+
+Inheritance = IS A RELATIONSHIP 
+
+
+What is HAS-A-RELATIONSHIP?
+-This is not inheritance but 2 classes related to each other. Especially one class using the other as a property
+
+EX: Author/Book
+
+
+
+const author = new Author();
+
+author IS-A Author 
+author IS-A Person 
+
+author HAS Book objects
+
+
+GETTERS
+-Usually they are return methods
+-They may or may not take arguments (this can improve your security of retrieving data)
+
+SETTERS:
+-Usually void methods (does not return anything)
+-Most of the time, they take some arguments 
+
+Both getters and setters are used to provide better control over the object properties to be set or retrieved
+
+THIS CONCEPT is known as ENCAPSULATION!!!
+
+What is ENCAPSULATION?
+-It is cutting direct access to class-object properties and providing getters and setters.
+
+
+
+Static properties 
+Math.PI;
+
+Static methods
+Array.isArray()
+Object.entries()
+Object.values()
+Math.min()
+
+
+-Static properties or methods can be achieved with the static keyword. 
+-static keyword states that the property or the function belongs to the template and can only be accessed
+by template (class)
+-Non-static porperties or function can only be accessed with template objects 
+
+
+
+ASYNCHRONOUS JAVASCRIPT 
+
+const account = {
+    username: 'test@test.com',
+    password: '1234'
+};
+
+JSON.stringify(account); // sent to server 
+
+
+if(accounts.includes(account)) {
+    // let user login
+}
+else {
+    // do not let
+}
+
+
+Synchronous steps to update Facebook Profile Picture 
+1. Login to Facebook account 
+2. Navigate to your profile 
+3. Click on your profile picture 
+4. Select update the picture 
+5. Change your profile picture
