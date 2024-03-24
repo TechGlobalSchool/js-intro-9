@@ -19,3 +19,24 @@ JavaScript is ASYNCHRONOUS implicitly.
 
 
 CALLBACK FUNCTION is a function passed to another function as an argument
+
+
+async function test2 () {
+    try {
+        await Program.gotoApp();
+        await Program.clickOnButton();
+        await Program.closeApp();
+    } catch(err) {
+        console.log(err);
+    }
+}
+
+await keyword cannot be used if the function is not declared with async keyword. 
+await keyword will be used for functions returning Promises only!
+
+
+goToCostco
+getMeat 
+cook 
+serve
+eat

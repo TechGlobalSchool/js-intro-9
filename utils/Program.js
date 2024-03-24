@@ -25,7 +25,7 @@ class Program {
         return new Promise((resolve, reject) => {
             setTimeout(() => {
                 console.log('This is closeApp method running!');
-                const done = false;
+                const done = true;
                 if(done) resolve('APP is closed!');
                 else reject('ERROR: APP is still running!');
             }, 1000);
