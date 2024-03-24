@@ -1,0 +1,21 @@
+
+
+
+for(let i = 0; i <= 5; i++) {
+    console.log(i);
+}
+
+/*
+0
+1
+2
+3
+4
+5
+*/
+
+JavaScript is single-threaded (it will run one thing at a time).
+JavaScript is ASYNCHRONOUS implicitly. 
+
+
+CALLBACK FUNCTION is a function passed to another function as an argument

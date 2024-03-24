@@ -4,12 +4,14 @@ setTimeout(() => {
 
 
 function method1() {
+    // login functionality that runs in 5 seconds
     setTimeout(() => {
         console.log('LOGIN');
     }, 5000); 
 }
 
 function method2() {
+    // navigate to profile
     setTimeout(() => {
         console.log('NAVIGATE TO PROFILE');
     }, 1000); 
