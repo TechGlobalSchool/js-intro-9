@@ -14,3 +14,77 @@ static method of a class can be invoked with the className
 non-static methods of the class can be invoked with an object of the class
 
 static methods or fields belongs to class and this information is shared for all the objects of this class
+
+
+How to execute JS code 
+1. Extension CodeRunner
+2. node command in the terminal
+3. in the browser thru html pages
+
+
+Web Application -> www.smth.com 
+
+Web applications are consist of many web pages
+Web page -> it is created with html and consist of many web elements (button, link, image, paragraphs, lists, sliders, date pickers)
+
+Web elements - > created with HTML tags
+
+HTML Tags are consist of tagName, properties/attributes which are key-value pairs and store information about the tag (web element)
+
+<label for="twotabsearchtextbox" style="display: none;">Search Amazon</label>
+
+tagName: label 
+attributes: for, style
+style property: display with the value none 
+
+
+Opening tag -> <tagName>
+Closing tag -> </tagName>
+Self-closing tag -> <tagName/>
+
+<tagName att1 = "val1" att2 = "val2">VISIBLE TEXT or other tags</tagName>
+<tagName att1 = "val1"/>
+
+
+NOTE: all the attributes goes into opening html tags
+
+
+1. Create an html file and use a script tag in the body to be able to specify the .js file to be executed 
+    type should be module and src should the path of the .js file to be executed
+
+<script type="module" src="path"></script>
+
+
+2. Create ES6 Module, declare your function and use export keyword to export them. 
+
+export function getDriver() {
+    console.log('You get driver!');
+}
+
+export function quitDriver() {
+    console.log('Quit driver!');
+}
+
+
+3. Create a file to import and use your ES6 Modules 
+
+import { getDriver, quitDriver } from "./driverUtils.js";
+
+getDriver();
+quitDriver();
+
+
+NOTE: this can be achieved with CommonJS Modules as well
+const { getDriver, quitDriver } = '.driverUtils.js';
+
+
+TASK
+1. Create a new method in your module
+function getInfo() {
+    console.log('INFO');
+}
+
+2. Export it 
+3. Import it in the file to be executed 
+4. Invoked the imported method 
+5. Make sure it works in the browser
