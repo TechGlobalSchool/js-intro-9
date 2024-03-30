@@ -1,0 +1,16 @@
+
+
+MODULES 
+
+1. Before ES6 - CommonJS Modules  -> module.exports / require
+    Works well with server-side application that runs with Node.js
+
+2. After ES6 - ES Modules   -> export / import
+    Browsers
+
+
+
+static method of a class can be invoked with the className
+non-static methods of the class can be invoked with an object of the class
+
+static methods or fields belongs to class and this information is shared for all the objects of this class
