@@ -1,0 +1,23 @@
+h1 {
+  background-color: lightyellow;
+}
+body {
+  text-align: center;
+  border: solid;
+  border-color: darkred;
+  padding: 5px;
+  margin: 20px;
+}
+h1,
+h2 {
+  color: darkred;
+}
+p {
+  background-color: silver;
+}
+a {
+  color: blue;
+}
+b.first_line {
+  color: limegreen;
+}
