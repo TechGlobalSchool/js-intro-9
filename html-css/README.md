@@ -38,9 +38,18 @@
 
 ## Table
  - Parent element: `table`
- - `thead` help organize our head elements
+ - `thead` help organize our head elements (optional)
  - `th` - table heading
- - `tbody` - helps organize our body content
+ - `tbody` - helps organize our body content (optional)
  - `tr` - table row
  - `td` - table data
- - `tfoot` - helps organize bottom content
+ - `tfoot` - helps organize bottom content (optional)
+
+## Form
+- Used to collect data from users
+
+- `form` Parent element
+- `input` Self closing element. Used to collect data based on type
+- `label`
+- `select` and `option`
+- `button`

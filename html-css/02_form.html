@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        border: 1px solid;
+        margin-bottom: 10px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>HTML Forms</h1>
+
+    <!-- <form action="https://aws.com" method="POST"> -->
+    <form>
+      <fieldset>
+        <legend>Contact Form</legend>
+        <div>
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="fname" placeholder="First Name" />
+        </div>
+        <div>
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" />
+        </div>
+        <div>
+          <label for="password">Password</label>
+          <!-- <input type="password" id="password" min="8" max="32" pattern="[A-Z]/g"/> -->
+          <input type="password" id="password" />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="abc@mail.com" />
+        </div>
+        <div>
+          <p>Are you coming to class tomorrow?</p>
+          <label
+            >Yes
+            <input type="radio" name="attendance" checked />
+          </label>
+          <label
+            >No
+            <input type="radio" name="attendance" />
+          </label>
+        </div>
+        <div>
+          <p>Pick your favorite colors:</p>
+          <label>
+            Blue
+            <input type="checkbox" value="blue" />
+          </label>
+          <label>
+            Red
+            <input type="checkbox" value="red" />
+          </label>
+          <label>
+            Green
+            <input type="checkbox" value="green" />
+          </label>
+        </div>
+        <div>
+          <p>Select your batch?</p>
+          <select>
+            <option value="01">Batch 01</option>
+            <option value="02">Batch 02</option>
+            <option value="03">Batch 03</option>
+          </select>
+        </div>
+        <div>
+          <label for="comment"> Leave your comment</label> <br />
+          <textarea cols="40" rows="10" id="comment"></textarea>
+        </div>
+        <div>
+          <!-- <button type="submit">Submit</button> -->
+          <input type="submit" />
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
