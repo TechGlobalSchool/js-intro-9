@@ -21,3 +21,7 @@ a {
 b.first_line {
   color: limegreen;
 }
+
+h2 {
+  color: hsl(0, 33, 68);
+}
