@@ -1,0 +1,107 @@
+
+
+Software Testing 
+
+
+Titles: 
+SDET -> Software Development Engineer in Test 
+Software Engineer in Test 
+Software Developer in Test 
+
+Automation Engineer 
+QA Automation Engineer
+Automation Test Engineer 
+
+Manual Tester 
+QA Analyst 
+QA Specialist 
+QA Associate
+
+
+Manual Testing: Human effort
+Automation Testing: Programs - Scripts 
+
+30-40k per year     -> 150-200k + 50k
+2   -> 80-90k       -> 160-180k 10-12 hours
+
+60-75k per year     
+
+
+Manual testing involves humans testing and interacting with a software application or product to identify issues, 
+while automated testing uses computer programs, applications, or scripts to write pre-defined tests and run them 
+programmatically.
+
+
+Why automation testers are needed in Tech companies?
+
+Does automation testers do manual testing? 
+20 percent manual effort 
+
+
+Software: Anything 
+System software: macOS, windows, ios, android 
+Application software: 
+
+
+Need - Problem -> Idea - SDLC -> Application 
+
+Scrum vs Kanban 
+time-boxed vs flexible
+
+Atlassian: 
+JIRA - Confluence - Bitbucket
+
+Sprint: 2 weeks of time period
+
+Sprint planning: assign user stories to developers and testers 
+Daily stand up: share status with the other team members
+Grooming - Refinement: refine our backlog for the future sprints
+Retrospective: evaluation of the previous sprint
+DEMO - REVIEW: demo 
+
+SRS: Requirement document -> SA - PO - Client
+EPIC: Cart
+User story: 
+PO or BA write user stories - maintain product backlog 
+-Acceptance criteria - or requirements
+
+
+TEST CASE: 
+Description
+Steps
+Expected result
+
+Validate that user can add a course to the cart
+EXAMPLE - Traditional way of creating a Test Case 
+Go to https://www.techglobal-training.com/
+Select Frontend Testing from Practices dropdown in the header
+Select Project - Shopping Cart
+Add SDET Course to the Cart
+Validate that the SDET Course is added to cart with the right information 
+    Information expected:
+    Course name: SDET Course | Cypress Playwright 
+    Discount amount: $80(20 % off)
+    Total: $80
+
+
+EXAMPLE - BDD - Behavior-Driven Development - Used mostly for frontend testing 
+Given user is on https://www.techglobal-training.com/
+When user selects Frontend Testing from Practices dropdown in the header
+And user selects Project - Shopping Cart
+And user adds SDET Course to the Cart
+Then users sees SDET Course is added to cart with the right information 
+    Information expected:
+    Course name: SDET Course | Cypress Playwright 
+    Discount amount: $80(20 % off)
+    Total: $80
+
+
+it('Validate that user can add a course to the cart', () => {
+    cy.visit('https://www.techglobal-training.com/');
+    cy.get('.Header_button__eZN2O').click();
+    cy.get('#frontend-option').click();
+    cy.get('#card-18').click();
+    cy.get('#course-1 button').click();
+    cy.get('locator').should.be.visible();
+    cy.get('locator').should.have.text('Sdet Course | Cypress Playwright ')
+});
