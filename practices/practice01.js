@@ -1,28 +1,26 @@
-/*
+/*Task1:
 Requirement:
-Write a program that generates a random number between 0 and 50 (both 0 and 50 are included)
-
-Multiply number with 5 and print the result with below message
-
+Write a program that generates a random number 
+between 0 and 50 (both 0 and 50 are included)
+Multiply number with 5 and print the result with below 
+message
 Expected result:
 The random number * 5 = {result}
-
-PSEUDO CODE:
-1. Find a random number bt 0 and 50
-2. multiply it with 5
-3. compose it with a message
 */
 
-let randomNumber = Math.floor(Math.random() * 51);
+// Math.floor(Math.random() * range) + startPoint
 
-console.log("The random number = " + randomNumber);
-console.log("The random number * 5 = " + randomNumber * 5);
+let randomNum = Math.floor(Math.random() * 51)
+
+console.log(randomNum)
+// console.log("The random number * 5 = " + randomNum * 5)
+console.log(`The random number * 5 = ${randomNum * 5}`)
 
 
-/*
+/*Task2:
 Requirement:
-Write a program that generates two random numbers between 1 and 10 (both 1 and 10 are included)
-
+Write a program that generates two random numbers 
+between 1 and 10 (both 1 and 10 are included)
 Find the min number
 Find the max number
 Find the absolute difference of the numbers
@@ -31,46 +29,46 @@ Expected result:
 Min number = {min}
 Max number = {max}
 Difference = {difference}
-
-PSEUDO CODE:
-1. Find 2 random numbers bt 1 and 10
-2. Find min and max of these numbers
-3. Find the absolute difference
 */
 
-let random1 = Math.ceil(Math.random() * 10);
-let random2 = Math.ceil(Math.random() * 10);
+// Math.floor(Math.random() * range) + startPoint
 
-console.log("The random number 1 = " + random1);
-console.log("The random number 2 = " + random2);
+let random1 = Math.floor(Math.random() * 10) + 1
+let random2 = Math.floor(Math.random() * 10) + 1
 
-let max = Math.max(random1, random2);
-let min = Math.min(random1, random2);
-let diff = max - min; // Math.abs()
+console.log(random1)
+console.log(random2)
 
-console.log("Max number = " + max);
-console.log("Min number = " + min);
-console.log("Difference = " + diff);
+console.log("Min number = " + Math.min(random1,random2))
+console.log(`Max number = ${Math.max(random1,random2)}`) // Use this way of concatination - String Literals
+console.log("Difference = ",Math.abs(random1 - random2)) 
 
-/*
+  
+/*Task3:
 Requirement:
-Write a program that generates a random number between 50 and 100 (both 50 and 100 are included)
-
+Write a program that generates a random number 
+between 50 and 100 (both 50 and 100 are included)
 Find the remainder of the number by 10
 
 Expected result:
-The random number % 10 = {result}
+The random number % 10 = {result
 */
 
-let ranNumber = Math.floor(Math.random() * 51) + 50; //50 - 100
+// Math.floor(Math.random() * range) + startPoint
 
-console.log("The random number % 10 = " + ranNumber % 10);
+let randomNumber = Math.floor(Math.random() * 51) + 50
+
+console.log(randomNumber)
+
+console.log(`The random number % 10 = ${randomNumber % 10}`)
 
 
-/*
+/*Task4:
 Requirement:
-Write a program that generates 5 random numbers between 1 to 10 (1 and 10 are included)
-Calculate some points based on numbers generated. So, the points will be calculated as below
+Write a program that generates 5 random numbers between 
+1 to 10 (1 and 10 are included)
+Calculate some points based on numbers generated. So, the 
+points will be calculated as below
 1st  number will be multiplied by 5 and added as points
 2nd number will be multiplied by 4 and added as points
 3rd number will be multiplied by 3 and added as points
@@ -79,32 +77,42 @@ Calculate some points based on numbers generated. So, the points will be calcula
 
 Test data:
 3 7 2 1 8
-
 Expected result:
 59
 */
+let points = 0;
 
-let ranNum1 = Math.ceil(Math.random() * 10);
-let ranNum2 = Math.ceil(Math.random() * 10);
-let ranNum3 = Math.ceil(Math.random() * 10);
-let ranNum4 = Math.ceil(Math.random() * 10);
-let ranNum5 = Math.ceil(Math.random() * 10);
+let rand1 = Math.floor(Math.random() * 10) + 1
+points += rand1 * 5
 
-let result = ranNum1 * 5 + ranNum2 * 4 + ranNum3 * 3 + ranNum4 * 2 + ranNum5;
+let rand2 = Math.floor(Math.random() * 10) + 1
+points += rand2 * 4
 
-console.log(result);
+let rand3 = Math.floor(Math.random() * 10) + 1
+points += rand3 * 3
+
+let rand4 = Math.floor(Math.random() * 10) + 1
+points += rand4 * 2
+
+let rand5 = Math.floor(Math.random() * 10) + 1
+points += rand5
 
 
-/*
+console.log(rand1,rand2,rand3,rand4,rand5)
+console.log(points)
+
+/*Task5:
 Requirement:
-Write a program that generates 4 random numbers as below;
+Write a program that generates 4 random numbers as 
+below;
 1st  number to be between 1 and 25 (both included)
 2nd number to be between 26 and 50 (both included)
 3rd number to be between 51 and 75 (both included)
 4th number to be between 76 and 100 (both included)
-
-Find the absolute difference between the max and min number
-Find the absolute difference between the second and third number
+Find the absolute difference between the max and min 
+number
+Find the absolute difference between the second and 
+third number
 Find the average of all 4 numbers
 
 Expected result:
@@ -112,16 +120,19 @@ Difference of max and min = {result}
 Difference of second and third = {result}
 Average of all = {average}
 */
-let r1 = Math.ceil(Math.random() * 25); // 1-25
-let r2 = Math.ceil(Math.random() * 25) + 25; // 26-50
-let r3 = Math.ceil(Math.random() * 25) + 50; // 51-75
-let r4 = Math.ceil(Math.random() * 25) + 75; // 76-100
 
-console.log(r1);
-console.log(r2);
-console.log(r3);
-console.log(r4);
+// Math.floor(Math.random() * range) + startPoint
 
-console.log("Difference of max and min = " + (r4 - r1));
-console.log("Difference of second and third = " + (r3 - r2));
-console.log((r1 + r2 + r3 + r4) / 4);
+rand1 = Math.floor(Math.random() * 25) + 1
+rand2 = Math.floor(Math.random() * 25) + 26
+rand3 = Math.floor(Math.random() * 25) + 51
+rand4 = Math.floor(Math.random() * 25) + 76
+
+console.log(rand1,rand2,rand3,rand4)
+
+let max = Math.max(rand1,rand2,rand3,rand4)
+let min = Math.min(rand1,rand2,rand3,rand4)
+
+console.log(`Difference of max and min = ${Math.abs(max - min)}`)
+console.log(`Difference of second and third = ${Math.abs(rand2 - rand3)}`)
+console.log(`Average of all = ${(rand1 + rand2 + rand3 + rand4) / 4}`)
