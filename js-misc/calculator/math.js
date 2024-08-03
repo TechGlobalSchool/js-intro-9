@@ -3,7 +3,7 @@
 const MATHModule = (function () {
   // All your calculations goes here
   function add(a, b) {
-    return a + b;
+    return parseInt(a) + parseInt(b);
   }
 
   return {
