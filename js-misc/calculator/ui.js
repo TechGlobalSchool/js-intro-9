@@ -1,9 +1,7 @@
 // Wrap your whole module in IIFE
 
 const UIModule = (function () {
-  // All your calculations goes here
-
-  function getNum1() {
+  function getNumberOneFromUser() {
     const num1 = prompt("Provide num1");
     return num1;
   }
@@ -16,9 +14,10 @@ const UIModule = (function () {
       throw Error('Operator is invalid. Please provide on of + - * /')
     }
   }
+  // Keep adding more functions
 
   return {
-    getNum1,
+    getNumberOneFromUser,
     getOperator
   };
 })();
