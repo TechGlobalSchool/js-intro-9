@@ -1,13 +1,13 @@
-fetch('https://tech-global-training.com/students')
+fetch('https://gorest.co.in/public/v2/users')
   .then(response => {
-    if (!response.ok) {
-      throw new Error('Network response was not ok');
-    }
-    return response.json(); // Parse the JSON data
+    //handle response            
+    console.log(response);
   })
   .then(data => {
-    console.log(data); // Log the result to the console
+    //handle data
+    console.log(data);
+    console.log(data.body)
   })
   .catch(error => {
-    console.error('There was a problem with the fetch operation:', error);
+    //handle error
   });
